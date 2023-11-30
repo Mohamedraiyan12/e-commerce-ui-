@@ -1,0 +1,458 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* nav{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: space-around;
+
+}
+nav .logo{
+    color: black;
+    margin-left: 8px;
+    font-size: 2em;
+    font-weight: bold;
+    line-height: 40px;
+}
+nav ul li a{
+    color: black;
+    text-decoration: none;
+}
+nav ul li{
+    font-size: 1rem;
+    list-style-type: none;
+    line-height: 40px;
+    display: inline;
+    padding: 6px;
+}
+nav ul li a:hover{
+    border-bottom: 2px solid yellow;
+}
+nav .bar{
+    margin-left: 5px;
+    line-height: 40px;
+}
+nav .icon i{
+    line-height: 40px;
+    margin-right: 8px;
+    width: 15px;
+}
+nav .icon i:hover{
+    color: yellow;
+} */
+nav{
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    background: white;
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: space-around;
+}
+nav .logo{
+    line-height: 40px;
+    font-size: 30px;
+    font-weight: bold;
+    text-shadow: 3px 5px 4px rgb(84, 8, 8);
+}
+nav ul li{
+     margin-right: 10px;
+     display: inline-block;
+     line-height: 40px;
+     list-style-type: none;
+}
+nav ul li a{
+    font-family: 30px;
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+}
+nav ul li a:hover{
+    border-bottom: 3px solid black;
+}
+
+nav .icon{
+    line-height: 40px;
+
+}
+nav .icon #togle{
+    display: none;
+}
+
+.home{
+    position: relative;
+}
+.home img{
+    position: relative;
+    width: 100%;
+    overflow-x: hidden;
+ }
+.home .homecontent{
+    position: absolute;
+    padding: 10%;
+    top: 0%;
+}
+.home .homecontent .title1{
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+}
+.home .homecontent span{
+    color: aliceblue;
+    text-shadow: 2px 2px 2px black;
+}
+.home .homecontent .content{
+    font-size: 12px;
+    font-style: oblique;
+}
+.home .homecontent button{
+    display: inline-block;
+    width: 100px;
+    background: transparent;
+    height: 30px;
+    box-shadow: 2px 2px 2px black;
+    line-height: 30px;
+    border-radius: 20px;
+}
+.home .homecontent button:hover{
+    background-color: black;
+    color: beige;
+}
+.features .features-heading{
+    margin: 30px;
+    border-radius: 10px;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    color: beige;
+    background-color: black;
+}
+ .features .features-content{
+    margin: 30px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    text-align: center;
+    padding: 2rem;
+    justify-content: space-around;
+}
+.features .features-content .content{
+    padding: 20px;
+    flex: 1 1 2rem;
+    display: relative;
+    border: 1px solid black;
+    border: none;
+    box-shadow: 2px 2px 5px#fffc39;
+}
+.features .features-content .content img{
+    border-radius: 10px;
+    margin-bottom: 1em;
+
+}
+.features .features-content .content h5{
+   font-weight: bold;
+   font-size: 1em;
+
+}
+.features .features-content .content p{
+    font-size: 10px;
+    font-style: italic;
+}
+.features .features-content .content button{
+    border: 1px  solid black;
+    border-radius: 7px;
+    margin-top: 7px;
+    padding: 4px;
+}
+.features .features-content .content button:hover{
+    background-color: #fffc39;
+}
+#product .heading{
+    margin: 30px;
+    border-radius: 10px;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    color: beige;
+    background-color: black;
+}
+#product .product-content{
+    margin: 30px;
+    padding: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+    justify-content: space-around;
+    text-align: center;
+}
+#product .product-content .content2{
+    position: relative;
+    padding: 10px;
+    border: 1px solid black;
+    border: none;
+    box-shadow: 2px 2px 7px#fffc39;
+}
+.product .product-content .content2 h5{
+    padding: 2px;
+    font-weight: bold;
+    font-size: 1rem;
+}
+.product .product-content .content2 p{
+    padding: 4px;
+    font-weight: bold;
+    font-size: 12px;
+}
+.product .product-content .content2 button{
+    border: 1px solid  black;
+    width: 120px;
+    padding: 4px;
+    border-radius: 6px;
+    box-shadow: 2px 2px 4px black;
+}
+.product .product-content .content2 button:hover{
+    background-color: #fffc39;
+}
+nav .checkbtn{
+   line-height: 40px;
+   display: none;
+}
+nav #check{
+    display: none;
+}
+.footer .footer-content{
+
+    padding: 4rem;
+    background: black;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-around;
+}
+.footer .footer-content{
+    flex: 1 1 2rem;
+}
+.footer .footer-content .aboutus{
+    color: aliceblue;
+}
+.footer .footer-content .aboutus h3{
+    font-weight: bold;
+    font-size: 30px;
+    color: #fffc39;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+}
+.footer .footer-content .aboutus p{
+    font-size: 10px;
+    font-weight: 700;
+}
+.footer .footer-content .icons h3{
+    font-weight: bold;
+    font-size: 30px;
+    color: #fffc39;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+
+}
+
+.footer .footer-content .icons i{
+    color: #fffc39;
+}
+.footer .footer-content .icons span{
+    display: inline-block;
+    color: azure;
+    font-size: 8px;
+}
+.footer .footer-content .icons li{
+    list-style-type: none;
+}
+.footer .footer-content .contact-details h3{
+    font-weight: bold;
+    font-size: 30px;
+    color: #fffc39;
+    text-transform: capitalize;
+    letter-spacing: 1px; 
+}
+.footer .footer-content .contact-details i{
+    color: #fffc39;
+}
+.footer .footer-content .contact-details p{
+    display: inline-block;
+    color: azure;
+    font-size: 8px;
+}
+.footer .footer-content .contact-details li{
+    list-style-type: none;
+}
+ span i{
+    position: absolute;
+    top: 10px;
+    right: 20px;
+}
+.account{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.login{
+    position: absolute;
+    top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+.card{
+    opacity: 0;
+    padding: 30px;
+    align-items: center;
+    display: flex;
+}
+.showlogin{
+    z-index: 1;
+    opacity: 1;
+}
+.card .title{
+    font-size: 30px;
+    font-weight: bold;
+}
+.card input{
+    margin-top: 15px;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid black;
+    font-size: 14px;
+}
+
+.card .forgetpass p{
+    display: flex;
+    justify-content: end;
+    font-size: 10px;
+    align-self: flex-end;
+}
+.card .close i{
+    border-radius: 50%;
+    font-size: 17px;
+    top: 10px;
+    right: 10px;
+    position: absolute;
+}
+
+.card button{
+    background: #fffc39;
+    font-size: 15px;
+    font-weight: 600;
+    width: 200px;
+    outline: none;
+    border: none;
+    border-radius: 20px;
+    height: 30px;
+    margin-bottom: 10px;
+}
+.card button:hover{
+    background: black;
+    color: #fffc39;
+}
+.card .contact{
+    font-size: 15px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
+}
+.card .login-icon i{
+    background: linear-gradient(to right, yellow,white);
+    border-radius: 50%;
+    color: black;
+    font-size: 15px;
+    border: 1px solid black;
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+}
+.card .login-icon i:hover{
+
+    background: black;
+
+    color: aliceblue;
+}
+
+
+ /* @media (max-width:"500px")
+    
+ {
+    .home .homecontent span{
+        color: blue;
+        text-shadow: 2px 2px 2px black;
+}
+.home .homecontent .title1{
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-align: center;
+}
+.home img{
+    width: 100%;
+    overflow-x: hidden;
+}
+.home .homecontent .content{
+    font-size: 10px;
+    font-style: oblique;
+}
+
+nav .checkbtn{
+    display: block;
+    margin-left: 2px;
+}
+nav ul{
+    width: 50%;
+    min-height: 30vh;
+    position: fixed;
+    top: 30px;
+    left:-100%;
+    background-color: #53694c;
+    text-align: center;
+    transition: 1s;
+}
+nav ul li{
+    position: relative;
+    display: block;
+    margin: 30px 0;
+    line-height: 10px;
+}
+#check:checked~  ul{
+    left: 0;
+}
+} */
+@media only screen and (max-width: 680px) {
+    nav ul{
+        top: 40px;
+        width: 100%;
+        height: 0%;
+        height: 200px;
+        position: absolute;
+        background: skyblue;
+        display: none;
+        transition: 2s ease-in;
+    }
+    nav ul li{
+        text-align: center;
+        display: block;
+    }
+    nav .icon #togle{
+        display: inline-block;
+    }
+    .showmenu {
+        display: block;
+    }
+    .homecontent{
+        margin-top: 40px;
+    }
+    
+}
